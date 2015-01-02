@@ -1,10 +1,10 @@
 require "builder"
 
-require "gyoku/array"
-require "gyoku/xml_key"
-require "gyoku/xml_value"
+require "gyoku_v1/array"
+require "gyoku_v1/xml_key"
+require "gyoku_v1/xml_value"
 
-module Gyoku
+module GyokuV1
   class Hash
 
     # Translates a given +hash+ with +options+ to XML.

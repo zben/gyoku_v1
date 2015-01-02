@@ -1,7 +1,7 @@
-require "gyoku/version"
-require "gyoku/hash"
+require "gyoku_v1/version"
+require "gyoku_v1/hash"
 
-module Gyoku
+module GyokuV1
 
   # Converts a given Hash +key+ with +options+ into an XML tag.
   def self.xml_tag(key, options = {})

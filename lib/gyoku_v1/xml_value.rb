@@ -1,7 +1,7 @@
 require "cgi"
 require "date"
 
-module Gyoku
+module GyokuV1
   module XMLValue
     class << self
 

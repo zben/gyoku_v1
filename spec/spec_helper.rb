@@ -11,5 +11,5 @@ unless RUBY_PLATFORM =~ /java/
   end
 end
 
-require 'gyoku'
+require 'gyoku_v1'
 require 'rspec'

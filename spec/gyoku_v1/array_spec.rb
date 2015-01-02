@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Gyoku::Array do
+describe GyokuV1::Array do
 
   describe ".to_xml" do
     it "returns the XML for an Array of Hashes" do
@@ -61,7 +61,7 @@ describe Gyoku::Array do
   end
 
   def to_xml(*args)
-    Gyoku::Array.to_xml *args
+    GyokuV1::Array.to_xml *args
   end
 
 end

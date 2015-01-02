@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Gyoku::XMLValue do
+describe GyokuV1::XMLValue do
 
   describe ".create" do
     context "for DateTime objects" do
@@ -52,7 +52,7 @@ describe Gyoku::XMLValue do
   end
 
   def create(object, escape_xml = true)
-    Gyoku::XMLValue.create object, escape_xml
+    GyokuV1::XMLValue.create object, escape_xml
   end
 
 end

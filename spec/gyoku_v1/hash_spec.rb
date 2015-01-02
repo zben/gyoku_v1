@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Gyoku::Hash do
+describe GyokuV1::Hash do
 
   describe ".to_xml" do
     describe "returns SOAP request compatible XML" do
@@ -301,18 +301,18 @@ describe Gyoku::Hash do
 
     it "recognizes array of attributes with content in each" do
       hash = {
-        "foo" => [{:@name => "bar", :content! => 'gyoku'}, {:@name => "baz", :@some => "attr", :content! => 'rocks!'}]
+        "foo" => [{:@name => "bar", :content! => 'gyoku_v1'}, {:@name => "baz", :@some => "attr", :content! => 'rocks!'}]
       }
 
       expect([
-        '<foo name="bar">gyoku</foo><foo name="baz" some="attr">rocks!</foo>',
-        '<foo name="bar">gyoku</foo><foo some="attr" name="baz">rocks!</foo>'
+        '<foo name="bar">gyoku_v1</foo><foo name="baz" some="attr">rocks!</foo>',
+        '<foo name="bar">gyoku_v1</foo><foo some="attr" name="baz">rocks!</foo>'
       ]).to include to_xml(hash)
     end
 
     it "recognizes array of attributes but ignores content in each if selfclosing" do
       hash = {
-        "foo/" => [{:@name => "bar", :content! => 'gyoku'}, {:@name => "baz", :@some => "attr", :content! => 'rocks!'}]
+        "foo/" => [{:@name => "bar", :content! => 'gyoku_v1'}, {:@name => "baz", :@some => "attr", :content! => 'rocks!'}]
       }
 
       expect([
@@ -384,7 +384,7 @@ describe Gyoku::Hash do
   end
 
   def to_xml(hash, options = {})
-    Gyoku::Hash.to_xml hash, options
+    GyokuV1::Hash.to_xml hash, options
   end
 
 end

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Gyoku::XMLKey do
+describe GyokuV1::XMLKey do
 
   describe ".create" do
     it "removes exclamation marks from the end of a String" do
@@ -72,7 +72,7 @@ describe Gyoku::XMLKey do
   end
 
   def create(key, options = {})
-    Gyoku::XMLKey.create(key, options)
+    GyokuV1::XMLKey.create(key, options)
   end
 
 end

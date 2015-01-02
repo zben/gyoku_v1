@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "gyoku/version"
+require "gyoku_v1/version"
 
 Gem::Specification.new do |s|
-  s.name        = "gyoku"
-  s.version     = Gyoku::VERSION
+  s.name        = "gyoku_v1"
+  s.version     = GyokuV1::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = "Daniel Harrington"
   s.email       = "me@rubiii.com"
   s.homepage    = "https://github.com/savonrb/#{s.name}"
   s.summary     = "Translates Ruby Hashes to XML"
-  s.description = "Gyoku translates Ruby Hashes to XML"
+  s.description = "GyokuV1 translates Ruby Hashes to XML"
 
-  s.rubyforge_project = "gyoku"
+  s.rubyforge_project = "gyoku_v1"
   s.license = "MIT"
 
   s.add_dependency "builder", ">= 2.1.2"

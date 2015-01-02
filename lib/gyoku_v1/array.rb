@@ -1,9 +1,9 @@
 require "builder"
 
-require "gyoku/hash"
-require "gyoku/xml_value"
+require "gyoku_v1/hash"
+require "gyoku_v1/xml_value"
 
-module Gyoku
+module GyokuV1
   class Array
 
     NESTED_ELEMENT_NAME = "element"

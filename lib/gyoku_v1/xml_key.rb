@@ -1,4 +1,4 @@
-module Gyoku
+module GyokuV1
   module XMLKey
     class << self
 
